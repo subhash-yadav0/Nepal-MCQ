@@ -293,6 +293,7 @@ header .menu1{
   main .big-btn{
    color: #fff;
     text-decoration: none;
+    cursor: pointer;
   }
 
   #content-wrapper.no-scroll {
