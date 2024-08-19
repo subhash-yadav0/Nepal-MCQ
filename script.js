@@ -27,3 +27,13 @@ menuButton.addEventListener('click', () => {
     menu.classList.toggle('active');  // Toggle the menu visibility
     menuButton.style.color = "white"
 });
+
+
+
+document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+
+
+menuButton.addEventListener('click', () => {
+   
+    document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+});
