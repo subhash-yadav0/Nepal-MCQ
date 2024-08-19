@@ -1,0 +1,284 @@
+/* General Styles */
+body {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ebdeea;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    color: #000000;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   
+}
+/* ----------------------- */
+@media (max-width: 700px) {
+    .menu {
+        z-index: 999; /* Ensure the menu is on top */
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    body header .menu1 {
+        position: relative; /* Make sure the button stays on top */
+        z-index: 99999999;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        z-index: 1001; /* Ensure the menu items are above the background */
+    }
+
+    .menu li {
+        margin: 20px 0;
+    }
+
+    .menu li a {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+        z-index: 1001; /* Ensure the menu links are on top */
+    }
+}
+
+/* ----------------------- */
+.logo {
+    width: 10%;
+    height: auto;
+}
+header .fa-burger{
+    display: none;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: #000000;
+}
+
+
+.menu li {
+    margin-left: 20px;
+
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 600;
+    
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    justify-content: space-around;
+    padding:2px;
+    flex-wrap: wrap;
+    margin: 1vw 5vh 5vw;
+
+}
+
+.content-box {
+    background-color:#352f44;
+    border-radius: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;;
+    padding: 20px;
+    width: 30%;
+    height: 25vh;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 5vh;
+    color: #fff;
+
+}
+main .content-box:hover{
+    background: #2a2438;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+@media (max-width:700px) {
+   /* header .menu ul{
+    display: none;
+   } */
+   .content-box{
+    width: 90%;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    
+   }
+   .main{
+    margin:0%;
+
+   }
+/* 
+main .content-box:hover{
+
+    width: 300px;
+} */
+.logo {
+    width: 30%;
+    height: auto;
+}
+.menu ul{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+margin-top: 15vh;
+position: absolute;
+z-index: 11;
+
+
+}
+.menu ul li{
+    margin-left: -10vw;
+    margin-bottom: 10vh;
+   color: #fff;
+   z-index: 99999999;
+}
+.overlay{
+    z-index: 1;
+    background-color: #f4f4f4;
+    width: 100%;
+    height: auto;
+}
+body header .menu1{
+    display: block;
+}
+footer p{
+    font-size: 0.81rem;
+  }
+
+
+.menu {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    /* z-index: ; */
+    transition: background-color 0.5s ease;
+}
+
+
+.menu.active {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.918);
+    animation: fadeIn 0.5s ease forwards;
+    z-index: 1;
+}
+/* Button turns white when menu is active */
+.menu1.opened {
+    fill: white; /* Change the SVG paths to white */
+}
+
+.menu1.opened svg path {
+    stroke: white; /* If you need to change the stroke color as well */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+}
+
+
+/* -------------------------------------------------- */
+
+header .menu1{
+    display: none;
+}
+
+  .menu1 {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /* display: flex; */
+    padding: 0;
+  }
+  .line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  /* --------------------------------------- */
+ 
+  .fa-envelope{
+    font-size: 4.2rem;
+    z-index: 999999999;
+    position:-webkit-sticky;
+    color: #49243E;
+    
+  }
+  main img{
+    height: 4rem;
+    
+  }
+  main .engineer{
+    background-color: #5b7aa1;
+  }
