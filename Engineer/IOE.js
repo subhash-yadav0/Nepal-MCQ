@@ -16,17 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             question: "A wire is stretched to double its length. The stress produced is",
             options: ["equals to Y", "Less than Y", "greater than Y", "none"],
-            answer: "equals to Y "
+            answer: "equals to Y"
         },
         {
             question: "Rms velocity of gas molecule is directly proportional to",
             options: ["Temperature", "Square root of temperature", "Pressure", "Square root of the pressure"],
-            answer: " Square root of temperature"
+            answer: "Square root of temperature"
         },
         {
             question: "A car of mass 'm' moving with speed 'v' is stopped at a distance 'x' by the friction between the tyres and the road. If K.E. of the car is doubled, stopping distance will be",
             options: ["8x", "4x", "2x", "x"],
-            answer: " 2x"
+            answer: "2x"
         },
         {
             question: "Ignition occurs in petrol engine from",
@@ -36,17 +36,17 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             question: "Rain drops of equal size fall in air with terminal velocity of 2 cm/s. A drop formed by coalescing 27 drops obtain a terminal velocity of",
             options: ["54 cm/s", "108 cm/s", "18 cm/s", "6 cm/s"],
-            answer: " 18 cm/s"
+            answer: "18 cm/s"
         },
         {
             question: "The instrument used for measuring electric current is",
             options: ["ammeter", "voltmeter", "potentiometer", "wattmeter"],
-            answer: " ammeter"
+            answer: "ammeter"
         },
         {
             question: "The collision in which the relative velocity after collision is zero is",
             options: ["perfectly elastic collision", "perfectly inelastic collision", "semi elastic collision", "may be elastic or inelastic"],
-            answer: " perfectly inelastic collision"
+            answer: "perfectly inelastic collision"
         },
         {
             question: "The diesel engines are also known as ..................... Engine",
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             question: "Sound energy is converted into electrical energy in",
             options: ["Loudspeaker", "microphone", "sonometer", "radio"],
-            answer: " microphone"
+            answer: "microphone"
         },
         {
             question: "With the rise in temperature, surface tension",
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             question: "Two metal strips that constitute a thermostat must necessarily differ in their",
             options: ["mass", "length", "resistivity", "coefficient of linear expansion"],
-            answer: " coefficient of linear expansion"
+            answer: "coefficient of linear expansion"
         },
         {
             question: "On penetrating a uniform charged sphere, the electrical field strength E",
@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             question: "The pressure at the end of compression in a petrol engine compared to that of a diesel engine would be",
             options: ["higher", "lower", "same", "none"],
-            answer: " lower"
+            answer: "lower"
         },
         {
             question: "In an adiabatic process",
@@ -371,7 +371,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             question: "In vertically placed traffic light signals the order of signal from top to down is",
             options: ["red-green-amber", "green-amber-red", "red-amber-green", "amber-green-red"],
-            answer: " red-amber-green"
+            answer: "red-amber-green"
         },
         {
             question: "A diffraction pattern is obtained using a beam of red light, What happen if the red light is replaced by blue light?",
@@ -381,7 +381,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             question: "The fly wheel used in two stroke engine as compared to four stroke engine is",
             options: ["heavy in weight", "same in weight", "light in weight", "none"],
-            answer: " light in weight"
+            answer: "light in weight"
         },
         {
             question: "When an external resistance R is connected to a cell of internal resistance r, the maximum current flows in the external resistance when",
@@ -416,7 +416,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             question: "Some quantity of tap water is placed in an open pan and allowed to evaporate. After some time the temperature of water.",
             options: ["decreases slightly", "increases slightly", "remain same", "increases considerably"],
-            answer: " decreases slightly"
+            answer: "decreases slightly"
         },
         {
             question: "A sample of an ideal gas occupies a volume of ‘V’ at a pressure ‘P’ and absolute temp T. The mass of each molecule is m, then density of gas is",
@@ -426,7 +426,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             question: "Superconductors exhibit",
             options: ["Paramagnetism", "Diamagnetism", "Ferromagnetism", "Ferrimagnetism"],
-            answer: " Diamagnetism"
+            answer: "Diamagnetism"
         },
         {
             question: "A disc of radius 10 cm is rotating in magnetic field of flux density 0.4 T acting along axis. Emf of 0.08 V is developed between rims & centre of disc, then the angular frequency of disc is",
@@ -441,12 +441,12 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             question: "The vertical part of transformer is called",
             options: ["yoke", "limb", "insulating paper", "turn of coil"],
-            answer: " limb"
+            answer: "limb"
         },
         {
             question: "In parallel combination, total electrical power",
             options: ["increases", "decreases", "remains same despite of adding resistance", "may both increase or decrease"],
-            answer: " increases"
+            answer: "increases"
         },
         {
             question: "A battery of 12V is connected in series with resistors of 0.2 ohm, 0.3 ohm, 0.4 ohm, 0.5 ohm and 12 ohm. How much current would flow through the 0.3 ohm resistor:",
@@ -476,7 +476,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             question: "The kinetic energy of electrons released in photoelectric emission is dependent upon",
             options: ["frequency of incident light", "Intensity of incident light", "Nature of cathode surface", "Work function"],
-            answer: " frequency of incident light"
+            answer: "frequency of incident light"
         },
         {
             question: "The phenomenon of acquiring temporary electrification under the influence of a charged body is called",
