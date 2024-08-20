@@ -53,6 +53,11 @@ input[type="radio"].incorrect:checked + label {
     color: red;
 }
 
+input[type="radio"]{
+    height: 1.2rem;
+    width: 1.2rem;
+    cursor: pointer;
+}
 button {
     display: block;
     width: 100%;
