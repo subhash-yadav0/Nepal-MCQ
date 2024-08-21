@@ -37,3 +37,10 @@ menuButton.addEventListener('click', () => {
    
     document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
 });
+
+
+// -------------------------------cdn----------------------------
+
+ScrollReveal().reveal('.content-box',{delay:500,origin:'top', interval: 200});
+
+// -------------------------------cdn----------------------------
