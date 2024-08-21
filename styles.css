@@ -6,7 +6,9 @@ body {
     background: #c6c3c3;
 
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /* Header Styles */
 header {
     display: flex;
