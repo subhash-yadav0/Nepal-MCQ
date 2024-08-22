@@ -110,6 +110,8 @@ main {
     flex-wrap: wrap;
     /* margin: 1vw 5vh 5vw; */
     margin-bottom: 10vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
 
 }
 
@@ -174,9 +176,8 @@ footer {
 
     }
 
-    .main {
-        margin: 0%;
-
+    main{
+       margin: 0%;
     }
 
     /* 
