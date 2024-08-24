@@ -154,11 +154,13 @@ footer {
     padding: 10px 0;
 }
 
-.heading {
+body .heading {
     text-align: center;
 
 }
-
+.highlights{
+    color: green;
+}
 
 
 
