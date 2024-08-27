@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon prakash403.png" type="image/x-icon">
+    <title>Contact Us</title>
+    <style>
+       #contact{
+        height: 100vh;
+       } 
+.contact-left{
+    flex-basis: 35%;
+}
+
+.raw{
+    display: flex;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #9c09f7;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #9c09f7;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    display:inline-block;
+    background: #8400d6;
+    position: relative;
+}
+
+.contact-right form{
+    width: 100%;
+    height: 89vh;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    transform: scale(1.3);
+    
+    border: 1px solid black;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px;
+    width: 10vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+   padding-top: 0.1vh;
+   padding-bottom: 0.1vh;
+    background: #262626;
+    font-weight: 300;
+    color: #fff;
+    
+}
+@media (max-width:700px) {
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .sub-title{
+        font-size: 50px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .contact-right{
+        width: 90%;
+        color: #fff;
+    }
+    .raw{
+        display: block;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    .contact-right form{
+    width: 100%;
+    height: 60vh;
+}
+form .btn2{
+    transform: scale(1.3);
+    
+    border: 1px solid black;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px;
+    width: 28vw;
+    margin-left: 5vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+   
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <div id="contact">
+        <div class="container">
+            <div class="raw">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact US</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>subahsh.com.np@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+9779809699050</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/groups/3661767137472610/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/subhash_yadav3" target="_blank"><i class="fa-brands fa-twitter"></i></i></a>
+                        <a href="https://www.instagram.com/i.am_subhash/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href="https://www.linkedin.com/in/subhash--yadav/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+                    </div>
+                    
+                </div>
+    
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="copyright">
+        <p> All rights reserved © 2024 subhash<p>
+    </div>
+    <script src="https://kit.fontawesome.com/ed0e6a4d5a.js" crossorigin="anonymous"></script>
+</body>
+</html>

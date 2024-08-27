@@ -42,23 +42,24 @@ menuButton.addEventListener('click', () => {
 // -------------------------------cdn----------------------------
 
 ScrollReveal().reveal('.content-box',{delay:500,origin:'top', interval: 200});
+ScrollReveal().reveal('.mcqimg',{delay:500,origin:'top', interval: 200});
 
 // -------------------------------cdn----------------------------
 
 
-var i = 0;
-var txt = 'All MCQ Practice Questions and answers.';
-var speed = 50;
+// var i = 0;
+// var txt = 'All MCQ Practice Questions and answers.';
+// var speed = 50;
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
+// function typeWriter() {
+//   if (i < txt.length) {
+//     document.getElementById("demo").innerHTML += txt.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, speed);
+//   }
+// }
 
-// Automatically start the typewriter effect when the page loads
-window.onload = function() {
-  typeWriter();
-};
+// // Automatically start the typewriter effect when the page loads
+// window.onload = function() {
+//   typeWriter();
+// };
