@@ -384,7 +384,23 @@ main .big-btn {
 .mobile {
     display: none;
 }
-
+.start{
+    cursor: pointer;
+    position: absolute;
+    padding: 15px;
+    border-radius: 12px;
+    border-style: none;
+    margin-top: -33vh;
+    background: #14A800;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-left: 10vw;
+    transition: transform 0.5s;
+}
+.start:hover{
+    transform:scale(1.1);
+}
 /* ----------------------------------landing-page----------------------- */
 /* Main Content Styles */
 
@@ -394,7 +410,7 @@ main .big-btn {
 .sec-viewport {
     height: 100vh;
     width: 100%;
-    background: #6d6d6d;
+    background:#222e44;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -533,11 +549,14 @@ main .content-box:hover {
 
 /* Style the label as a button */
 .toggle-label {
+   
+    height: 7vh;
     display: inline-block;
-    background-color: #fafcfd;
-    color: rgb(7, 44, 3);
+    background-color: #000500;
+    color: rgb(255, 255, 255);
     font-weight: 800;
-    padding: 10px 20px;
+    font-size: 1.5rem;
+    padding: 20px 20px;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
