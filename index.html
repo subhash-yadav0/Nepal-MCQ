@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en">
 
 <head>
@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 
 </head>
@@ -18,13 +20,13 @@
     <div class="full-viewport">
 
         <!-- Header Section -->
-        <header>
+        <header class="headdown">
             <img src="images/Nepal MCQ.png" alt="Logo" class="logo">
             <nav class="menu">
                 <ul>
 
                     <li><a href="About.html">About</a></li>
-                    <li><a href="About.html">Services</a></li>
+                    <li><a id="reload" href="#serv">Services</a></li>
                     <li><a href="Contact_Us.html">Contact Us</a></li>
                 </ul>
 
@@ -57,23 +59,23 @@
         margin-top: -60vh;
         margin-right: 9vw;" class="mcqanimation" src="https://lottie.host/embed/dc43f10a-9a28-40b5-92bf-4324bfe262a3/QrZVDB4UKs.json"></iframe>
 <!-- ----------------------------------------------landing-page------------------------------------------------ -->
-        <h1 class="services">MCQ for these faculty</h1>
+        <h1 id="serv" class="services">MCQ for these faculty</h1>
         <div class="sec-viewport">
-
-            <div class="parent">
+            <i id="refresh-btn" class="fa-solid fa-rotate-right fa-fade"></i>
+            <div  class="parent">
 
                 <a href="#eng">
-                    <p><i class="fa-solid fa-gears"></i><br>IOE </p>
+                    <p class="faculty-animation"><i class="fa-solid fa-gears"></i><br>IOE </p>
                 </a>
                 <a href="#med">
-                    <p><i class="fa-solid fa-user-doctor"></i><br>IOM</p>
+                    <p class="faculty-animation"><i class="fa-solid fa-user-doctor"></i><br>IOM</p>
                 </a>
-                <p><i class="fa-solid fa-book-open-reader"></i><br>CMAT</p>
+                <p class="faculty-animation"><i class="fa-solid fa-book-open-reader"></i><br>CMAT</p>
                 <a href="#BIT">
-                    <p><i class="fa-solid fa-computer"></i><br>BIT</p>
+                    <p class="faculty-animation"><i class="fa-solid fa-computer"></i><br>BIT</p>
                 </a>
-                <p><i class="fa-solid fa-computer"></i><br>CSIT</p>
-                <p><i class="fa-solid fa-atom"></i><br>Bsc</p>
+                <p class="faculty-animation"><i class="fa-solid fa-computer"></i><br>CSIT</p>
+                <p class="faculty-animation"><i class="fa-solid fa-atom"></i><br>Bsc</p>
 
             </div>
         </div>
@@ -90,7 +92,7 @@
 
 
 
-                <h1>Physics <i class="fa-solid fa-atom"></i></h1>
+                <h1 class="right-slide">Physics <i class="fa-solid fa-atom"></i></h1>
                 <main>
                     <!-- <h2 class="heading">𝓔𝓷𝓰𝓲𝓷𝓮𝓮𝓻𝓲𝓷𝓰 </h2> -->
                     <a id="eng" class="big-btn" href="/Engineer/100 Physics MCQ For IOE  Entrance Exam Preparation.html">
@@ -124,7 +126,7 @@
 
 
                 </main>
-                <h1>Chemistry <i class="fa-solid fa-flask"></i></h1>
+                <h1 class="right-slide">Chemistry <i class="fa-solid fa-flask"></i></h1>
                 <main>
 
                     <a class="big-btn" href="#">
@@ -157,7 +159,7 @@
                     </a>
 
                 </main>
-                <h1>Mathematics <i class="fa-solid fa-infinity"></i></h1>
+                <h1 class="right-slide">Mathematics <i class="fa-solid fa-infinity"></i></h1>
                 <main>
 
                     <a class="big-btn" href="#">
@@ -199,7 +201,7 @@
             <label for="toggle2" class="toggle-label">IOM <i class="fa-solid fa-angles-down fa-fade"></i></label>
             <div class="toggle-content">
 
-                <h1>Zoology <i class="fa-solid fa-hippo"></i></h1>
+                <h1 class="right-slide">Zoology <i class="fa-solid fa-hippo"></i></h1>
                 <main>
                     <!-- <h2 class="heading">𝓔𝓷𝓰𝓲𝓷𝓮𝓮𝓻𝓲𝓷𝓰 </h2> -->
                     <a id="eng" class="big-btn" href="#">
@@ -233,7 +235,7 @@
 
 
                 </main>
-                <h1>Botany <i class="fa-solid fa-seedling"></i></h1>
+                <h1 class="right-slide">Botany <i class="fa-solid fa-seedling"></i></h1>
                 <main>
 
                     <a class="big-btn" href="#">
@@ -266,7 +268,7 @@
                     </a>
 
                 </main>
-                <h1>Chemistry <i class="fa-solid fa-flask"></i></h1>
+                <h1 class="right-slide">Chemistry <i class="fa-solid fa-flask"></i></h1>
                 <main>
 
                     <a class="big-btn" href="#">
@@ -299,7 +301,7 @@
                     </a>
 
                 </main>
-                <h1>Physics <i class="fa-solid fa-atom"></i></h1>
+                <h1 class="right-slide">Physics <i class="fa-solid fa-atom"></i></h1>
                 <main>
 
                     <a class="big-btn" href="#">
@@ -343,7 +345,7 @@
             <label for="toggle3" class="toggle-label">BSc.CSIT <i class="fa-solid fa-angles-down fa-fade"></i></label>
             <div class="toggle-content">
 
-                <h1>Mathematics <i class="fa-solid fa-infinity"></i></h1>
+                <h1 class="right-slide">Mathematics <i class="fa-solid fa-infinity"></i></h1>
                 <main>
                     <!-- <h2 class="heading">𝓔𝓷𝓰𝓲𝓷𝓮𝓮𝓻𝓲𝓷𝓰 </h2> -->
                     <a id="eng" class="big-btn" href="#">
@@ -377,7 +379,7 @@
 
 
                 </main>
-                <h1>Physics <i class="fa-solid fa-atom"></i></h1>
+                <h1 class="right-slide">Physics <i class="fa-solid fa-atom"></i></h1>
                 <main>
 
                     <a class="big-btn" href="#">
@@ -410,7 +412,7 @@
                     </a>
 
                 </main>
-                <h1>Chemistry <i class="fa-solid fa-flask"></i></h1>
+                <h1 class="right-slide">Chemistry <i class="fa-solid fa-flask"></i></h1>
                 <main>
 
                     <a class="big-btn" href="#">
@@ -443,13 +445,13 @@
                     </a>
 
                 </main>
-                <h1>English <i class="fa-solid fa-comments"></i></h1>
+                <h1 class="right-slide">English <i class="fa-solid fa-comments"></i></h1>
                 <main>
 
                     <a class="big-btn" href="#">
                         <div class="content-box engineer">
-                            <img class="spin" src="images/engineer.gif" alt="engineer">
-                            <p>Comming soon..</p>
+                            <h2>Grammar</h2>
+                            <p>Practice Set</p>
                             <p>Set (1)</p>
                         </div>
                     </a>
@@ -476,7 +478,7 @@
                     </a>
 
                 </main>
-                <h1>General IT <i class="fa-solid fa-computer"></i></h1>
+                <h1 class="right-slide">General IT <i class="fa-solid fa-computer"></i></h1>
                 <main>
 
                     <a class="big-btn" href="#">
@@ -518,12 +520,12 @@
             <div class="toggle-content">
 
 
-                <h1>Mathematics <i class="fa-solid fa-infinity"></i></h1>
+                <h1 class="right-slide">Mathematics <i class="fa-solid fa-infinity"></i></h1>
                 <main>
                     <!-- <h2 class="heading">𝓔𝓷𝓰𝓲𝓷𝓮𝓮𝓻𝓲𝓷𝓰 </h2> -->
                     <a id="eng" class="big-btn" href="#">
                         <div class="content-box engineer">
-                            <h2>Mathematics</h2>
+                            <h2 class="highlights">Math</h2>
                             <p>MCQ practice</p>
                             <p class="highlights">set (1)</p>
                         </div>
@@ -552,13 +554,14 @@
 
 
                 </main>
-                <h1>English <i class="fa-solid fa-comments"></i></h1>
+                <h1 class="right-slide">English <i class="fa-solid fa-comments"></i></h1>
                 <main>
 
-                    <a class="big-btn" href="#">
+                    <a class="big-btn" href="/BIT/Grammar.html">
                         <div class="content-box engineer">
-                            <img class="spin" src="images/engineer.gif" alt="engineer">
-                            <p>Comming soon..</p>
+                            
+                            <h2 class="highlights">Grammar</h2>
+                            <p>MCQ Practic</p>
                             <p>Set (1)</p>
                         </div>
                     </a>
@@ -585,13 +588,13 @@
                     </a>
 
                 </main>
-                <h1>G.K.& Logical Reasoning <i class="fa-solid fa-brain"></i></h1>
+                <h1 class="right-slide">G.K.& Logical Reasoning <i class="fa-solid fa-brain"></i></h1>
                 <main>
 
-                    <a class="big-btn" href="#">
+                    <a class="big-btn" href="/BIT/GK.html">
                         <div class="content-box engineer">
-                            <img class="spin" src="images/engineer.gif" alt="engineer">
-                            <p>Comming soon..</p>
+                            <h2 class="highlights">G.k & L.R</h2>
+                            <p>MCQ Practic</p>
                             <p>Set (1)</p>
                         </div>
                     </a>
@@ -618,13 +621,14 @@
                     </a>
 
                 </main>
-                <h1>General IT <i class="fa-solid fa-computer"></i></h1>
+                <h1 class="right-slide">General IT <i class="fa-solid fa-computer"></i></h1>
                 <main>
 
                     <a class="big-btn" href="#">
                         <div class="content-box engineer">
-                            <img class="spin" src="images/engineer.gif" alt="engineer">
-                            <p>Comming soon..</p>
+                            
+                            <h2 class="highlights">General IT</h2>
+                            <p>MCQ Practic</p>
                             <p>Set (1)</p>
                         </div>
                     </a>
@@ -658,7 +662,7 @@
             <input type="checkbox" id="toggle5" class="toggle-checkbox">
             <label for="toggle5" class="toggle-label">BSc <i class="fa-solid fa-angles-down fa-fade"></i></label>
             <div class="toggle-content">
-                <h1>Biology <i class="fa-solid fa-dna"></i></h1>
+                <h1 class="right-slide">Biology <i class="fa-solid fa-dna"></i></h1>
                 <main>
 
                     <a class="big-btn" href="#">
@@ -692,7 +696,7 @@
 
                 </main>
 
-                <h1>Physics <i class="fa-solid fa-atom"></i></h1>
+                <h1 class="right-slide">Physics <i class="fa-solid fa-atom"></i></h1>
                 <main>
 
                     <a class="big-btn" href="#">
@@ -726,12 +730,12 @@
 
                 </main>
 
-                <h1>Mathematics <i class="fa-solid fa-infinity"></i></h1>
+                <h1 class="right-slide">Mathematics <i class="fa-solid fa-infinity"></i></h1>
                 <main>
                     <!-- <h2 class="heading">𝓔𝓷𝓰𝓲𝓷𝓮𝓮𝓻𝓲𝓷𝓰 </h2> -->
                     <a id="eng" class="big-btn" href="#">
                         <div class="content-box engineer">
-                            <h2>Mathematics</h2>
+                            <h2>Math</h2>
                             <p>MCQ practice</p>
                             <p class="highlights">set (1)</p>
                         </div>
@@ -760,7 +764,7 @@
 
 
                 </main>
-                <h1>English + Aptitude Test <i class="fa-solid fa-comments"></i> + <i class="fa-solid fa-brain"></i></h1>
+                <h1 class="right-slide">English + Aptitude Test <i class="fa-solid fa-comments"></i> + <i class="fa-solid fa-brain"></i></h1>
                 <main>
                     <!-- <h2 class="heading">𝓔𝓷𝓰𝓲𝓷𝓮𝓮𝓻𝓲𝓷𝓰 </h2> -->
                     <a id="eng" class="big-btn" href="#">
@@ -804,7 +808,18 @@
 
     </div>
     <!-- -----------------------------------------fourt------------------------------------ -->
-    <div class="extra"></div>
+    <div class="extra">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/groups/3661767137472610/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/subhash_yadav3" target="_blank"><i class="fa-brands fa-twitter"></i></i></a>
+            <a href="https://www.instagram.com/i.am_subhash/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="https://www.linkedin.com/in/subhash--yadav/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+        </div>
+        <hr>
+        <p>&copy; <span id="year"></span> prakash403.com.np. All rights reserved.</p>
+                           ------------------------------------------------
+    </div>
+   
     <!-- Main Content -->
     <!-- <i class="fa-solid fa-envelope"></i> -->
 
@@ -818,7 +833,35 @@
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/ed0e6a4d5a.js" crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/dc43f10a-9a28-40b5-92bf-4324bfe262a3/QrZVDB4UKs.json" background="transparent" speed="1" style="width: 200px; height: 300px" direction="1" playMode="normal" loop controls autoplay></dotlottie-player>
+    
+
+
+    <script>
+        ScrollReveal({
+             reset: true ,
+             distance:"60px",
+             duration:2500,
+             delay:400
+
+        });
+
+        ScrollReveal().reveal('.headdown', { delay: 400 , origin:'top'});
+        ScrollReveal().reveal('.title', { delay: 400 , origin:'left'});
+        ScrollReveal().reveal('.mcqanimation', { delay: 400 , origin:'right'});
+        ScrollReveal().reveal('.start', { delay: 800 , origin:'bottom'});
+        ScrollReveal().reveal('.right-slide', { delay: 100 , origin:'right'});
+        ScrollReveal().reveal('.image,.text-box', { delay: 400 , origin:'top'});
+        ScrollReveal().reveal('.faculty-animation',{delay:400,origin:'bottom', interval: 200});
+        ScrollReveal().reveal('.services', { delay: 100 , origin:'right',interval:200});
+        ScrollReveal().reveal('.fa-facebook', { delay: 200 , origin:'right',interval:200});
+        ScrollReveal().reveal('.fa-linkedin', { delay: 200 , origin:'left',interval:200});
+        ScrollReveal().reveal('.fa-twitter', { delay: 200 , origin:'left',interval:200});
+        ScrollReveal().reveal('.fa-instagram', { delay: 200 , origin:'right',interval:200});
+        ScrollReveal().reveal('.big-btn', { delay: 100 , origin:'bottom',interval:100});
+       
+
+
+    </script>
 </body>
 
 </html>

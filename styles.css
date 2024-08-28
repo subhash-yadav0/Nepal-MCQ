@@ -88,7 +88,15 @@ header {
 
 }
 
-
+#refresh-btn{
+    float: right;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 4rem;
+    right: 0;
+    position: absolute;
+    display: none;
+}
 /* ----------------------- */
 .logo {
     width: 50px;
@@ -428,6 +436,7 @@ main .big-btn {
 }
 
 .services {
+    padding: 20px;
     margin-bottom: -12vh;
     font-size: 2rem;
     color: #fff;
@@ -587,7 +596,7 @@ main .content-box:hover {
 
 /* Show content when checkbox is checked */
 .toggle-checkbox:checked+.toggle-label+.toggle-content {
-    max-height: 250vh;
+    max-height: 400vh;
     /* Adjust the height based on your content */
     padding-top: 20px;
     padding-bottom: 20px;
@@ -606,7 +615,33 @@ main .content-box:hover {
 }
 
 .extra {
-    height: 100vh;
+    
+    height: 25vh;
     width: 100%;
     background: #000;
+    color: #fff;
+}
+ p{
+    padding: 2px;
+    bottom: 0;
+    text-align: center;
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+    font-size: 2rem;
+    padding: 10px;
+}
+.social-icons a{
+    text-shadow: 0px 5px 30px;
+    color: #ffffff;
+    margin-left: 2vw;
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    transform: scale(1.1);
 }

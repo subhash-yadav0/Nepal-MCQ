@@ -41,27 +41,23 @@ menuButton.addEventListener('click', () => {
 
 // -------------------------------cdn----------------------------
 
-ScrollReveal().reveal('.content-box',{delay:500,origin:'top', interval: 200});
+// ScrollReveal().reveal('.content-box',{delay:500,origin:'top', interval: 200});
 ScrollReveal().reveal('.mcqimg',{delay:500,origin:'top', interval: 200});
+ScrollReveal().reveal('.toggle-label,.toggle-content',{delay:500,origin:'top', interval: 200});
 
 // -------------------------------cdn----------------------------
 
+document.getElementById('serv').addEventListener('click', function() {
+    var content = document.getElementById('scrollable-content');
+    content.classList.add('scrollable');
+});
 
-// var i = 0;
-// var txt = 'All MCQ Practice Questions and answers.';
-// var speed = 50;
-
-// function typeWriter() {
-//   if (i < txt.length) {
-//     document.getElementById("demo").innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
-//   }
-// }
-
-// // Automatically start the typewriter effect when the page loads
-// window.onload = function() {
-//   typeWriter();
-// };
+document.getElementById('refresh-btn').addEventListener('click', function() {
+    location.reload(); // This reloads the current page
+});
 
 
+const shot = document.querySelector('#refresh-btn')
+document.getElementById('reload').addEventListener('click',function() {
+   shot.style.display = 'block';
+});

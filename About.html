@@ -4,107 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="shortcut icon" href="images/favicon prakash403.png" type="image/x-icon">
+    <title>About Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <style>
         body {
-            font-family: Poppins, sans-serif;
             margin: 0;
-            padding: 0;
-            text-align: center;
+            font-family: poppins, Arial, sans-serif;
+            background-color: black;
+            color: white;
         }
 
-        /* Navigation Bar */
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-            text-align: center;
-        }
-
-        .navbar a {
-            float: left;
-            display: block;
+        .big {
+            font-size: 7rem;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
             color: white;
             text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
+            text-shadow:
+                0 0 10px rgba(255, 255, 255, 0.8),
+                0 0 20px rgba(255, 255, 255, 0.6),
+                0 0 30px rgba(255, 255, 255, 0.4),
+                0 0 40px rgba(0, 255, 255, 0.8),
+                0 0 70px rgba(0, 255, 255, 0.6),
+                0 0 80px rgba(0, 255, 255, 0.4),
+                0 0 100px rgba(0, 255, 255, 0.2),
+                0 0 150px rgba(0, 255, 255, 0.1);
         }
 
-        .navbar a:hover {
-            background-color: #575757;
+        .container {
+            padding: 50px;
+            max-width: 600px;
+            margin: auto;
         }
 
-        /* Section styles */
-        .section {
-            padding: 60px 20px;
+        p {
+            font-size: 16px;
+            line-height: 1.5;
         }
 
-        #home {
-            background-color: #f2f2f2;
-        }
-
-        #about {
-            background-color: #e6e6e6;
-        }
-
-        #services {
-            background-color: #cccccc;
-        }
-
-        #contact {
-            background-color: #b3b3b3;
-        }
-        i{
-            font-size: 0.71rem;
-            padding: 25px;
-            text-transform: lowercase;
-            margin: 2vw;
-            color: #3d044e;
-        }
-        body a{
-            text-decoration: none;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
+        #read-more {
+            display: inline-block;
+            margin-top: 10px;
             color: white;
+            text-decoration: none;
+            border-bottom: 2px solid white;
+            padding-bottom: 2px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #about-title {
+            font-size: 50px;
+            font-weight: bold;
+            margin-top: 20px;
         }
     </style>
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <div class="navbar">
+    <div class="container">
+        <p id="short-text">
+
+        </p>
+        <p id="long-text" class="hidden">
+            In addition to the MCQ tests, our website also features comprehensive syllabus for bachelor-level courses. We aim to cover a wide range of subjects and provide valuable resources for students across various disciplines. Looking ahead, we plan to expand our offerings to cover a broader market, ensuring that students have access to high-quality educational materials and practice tools tailored to their needs.
+        </p>
+        <a href="#" id="read-more">READ MORE</a>
+    </div>
+    <div class="big">About</div>
+
+    <script>
+        document.getElementById("read-more").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.getElementById("long-text").classList.toggle("hidden");
+            if (document.getElementById("long-text").classList.contains("hidden")) {
+                this.textContent = "READ MORE";
+            } else {
+                this.textContent = "READ LESS";
+            }
+        });
+
+        var i = 0;
+        var txt = 'Our website offers an interactive and user-friendly platform for students to test their knowledge through multiple-choice questions (MCQs). Upon selecting an option, the system provides immediate feedback: incorrect choices are highlighted in red, while correct answers are shown in green. This instant feedback helps students learn and understand their mistakes in real time, enhancing their study experience.';
+        var speed = 8;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("short-text").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        // Automatically start the typewriter effect when the page loads
+        window.onload = function () {
+            typeWriter();
+        };
+
+
+    </script>
+     <script>
+        ScrollReveal({
+             reset: true ,
+             distance:"60px",
+             duration:2500,
+             delay:400
+
+        });
+
+        ScrollReveal().reveal('.big', { delay: 400 , origin:'left'});
        
-        <a href="#about">About Us</a>
-        
-        
-    </div>
+       
+       
 
-    <!-- Home Section -->
-    <div id="home" class="section">
-        <h1>Welcome to Our Website</h1>
-        <p>Welcome to Prakash.com.np We are dedicated to helping students excel in their entrance exam preparation, whether it's for engineering, medical, Loksewa, or other competitive exams. Our platform offers a vast collection of MCQ questions tailored to the specific needs of each exam. With comprehensive practice sets and targeted question banks, we empower students to sharpen their knowledge, improve their exam-taking skills, and achieve their academic and career goals with confidence.</p>
-    </div>
 
-    
-
-    <!-- Contact Section -->
-    <div id="contact" class="section">
-        <h2>Contact Us</h2>
-        <i class="fa-solid fa-envelope"> subhash.com.np@gmail.com</i> <i class="fa-brands fa-whatsapp">+977 9809699050</i>
-        <p>Get in Touch with Us! We value your feedback, questions, and suggestions. Whether you're a student seeking assistance with our resources or you have inquiries about our services, we're here to help. Feel free to reach out to us through our contact form, email, or phone. Our team is dedicated to providing prompt and helpful responses to ensure your experience with us is smooth and beneficial. Let's work together to support your exam preparation journey!</p>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Prakash.com.np. All rights reserved.</p>
-    </footer>
+    </script>
 </body>
-<script src="https://kit.fontawesome.com/ed0e6a4d5a.js" crossorigin="anonymous"></script>
 
 </html>
