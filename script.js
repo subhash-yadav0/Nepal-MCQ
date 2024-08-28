@@ -43,6 +43,8 @@ menuButton.addEventListener('click', () => {
 
 // ScrollReveal().reveal('.content-box',{delay:500,origin:'top', interval: 200});
 ScrollReveal().reveal('.mcqimg',{delay:500,origin:'top', interval: 200});
+ScrollReveal().reveal('.headdown',{delay:500,origin:'top', interval: 200});
+ScrollReveal().reveal('.title',{delay:500,origin:'top', interval: 200});
 ScrollReveal().reveal('.toggle-label,.toggle-content',{delay:500,origin:'top', interval: 200});
 
 // -------------------------------cdn----------------------------
