@@ -65,20 +65,3 @@ ScrollReveal().reveal('.mcqimg',{delay:500,origin:'top', interval: 200});
 // };
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxQAoe28f6_g0Rri2RfzCrA0nk4O6Wy-9UKT7rZSbjcNuT7VSnpN_1akIY6eYjcn86_dw/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg")
-
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-        msg.innerHTML = "Message sent sucessfully"
-    })
-    setTimeout( function(){
-        msg.innerHTML=""
-
-    },5000)
-    form.reset()
-    .catch(error => console.error('Error!', error.message))
-})

@@ -245,6 +245,15 @@ main .content-box:hover{
             opacity: 1;
         }
     }
+ 
+    body .landing-page .title{
+
+        color: #ffffff;
+        position: absolute;
+        margin: 12% 10%;
+        font-size: 3.2rem;
+        margin-top: -10vh;
+    }
 }
 
 
@@ -401,6 +410,8 @@ main .big-btn {
 .start:hover{
     transform:scale(1.1);
 }
+
+
 /* ----------------------------------landing-page----------------------- */
 /* Main Content Styles */
 

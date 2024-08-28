@@ -7,11 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
         //     options: ["one solution", "no solution ", "infinitely many solutions", "two solutions"],
         //     answer: "no solution "
         // },
-        // {
-        //     question: "The vectors 𝐚 = (2, 3)and 𝐛 = (4, 6) are ……….",
-        //     options: ["Linearly dependent", "Orthogonal", "Parallel", "linearly independent "],
-        //     answer: "Linearly dependent"
-        // },
         
         {
             question: "A wire is stretched to double its length. The stress produced is",
@@ -534,52 +529,52 @@ document.addEventListener("DOMContentLoaded", function () {
     const quizForm = document.getElementById('quizForm');
     const submitBtn = document.getElementById('submitBtn');
     const result = document.getElementById('result');
-
+    
     questions.forEach((q, index) => {
         const questionDiv = document.createElement('div');
         questionDiv.classList.add('question');
-
+    
         const questionP = document.createElement('p');
-        questionP.textContent = `${index + 1}. ${q.question}`;
+        questionP.innerHTML = `${index + 1}. ${q.question}`; // Use innerHTML to include HTML content
         questionDiv.appendChild(questionP);
-
+    
         const optionsUl = document.createElement('ul');
         optionsUl.classList.add('options');
-
+    
         q.options.forEach((option) => {
             const optionLi = document.createElement('li');
-
+    
             const optionInput = document.createElement('input');
             optionInput.type = 'radio';
             optionInput.name = `question${index}`;
             optionInput.value = option;
-
+    
             // Check if the option is the correct answer
             if (option === q.answer) {
                 optionInput.classList.add('correct');
             } else {
                 optionInput.classList.add('incorrect');
             }
-
+    
             const optionLabel = document.createElement('label');
             optionLabel.textContent = option;
-
+    
             optionLi.appendChild(optionInput);
             optionLi.appendChild(optionLabel);
             optionsUl.appendChild(optionLi);
         });
-
+    
         questionDiv.appendChild(optionsUl);
         quizForm.appendChild(questionDiv);
     });
-
+    
     submitBtn.addEventListener('click', () => {
         let score = 0;
-
+    
         // Loop through all questions to check answers
         questions.forEach((q, index) => {
             const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
-
+    
             if (selectedOption) {
                 const isCorrect = selectedOption.value === q.answer;
                 if (isCorrect) {
@@ -587,8 +582,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         });
-
+    
         // Display the result
         result.textContent = `You scored ${score} out of ${questions.length}`;
     });
-});
+});    
