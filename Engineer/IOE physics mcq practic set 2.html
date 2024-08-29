@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="IOE physics mcq practic set 2, IOE mcq sets, old mcq questions,ioe physics old questions,ioe old questions solutions,ioe old questions of civil engineering,mcq physics ioe,mcq physics ioe civil engineering">
+    <title>IOE physics mcq practic set 2</title>
+    <link rel="stylesheet" href="IOE.css">
+    <link rel="icon" href="/images/favicon prakash403.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <h1>IOE <span>Physics</span> MCQ For Entrance Exam Preparation</h1>
+        <p>Total questions: 25</p>
+        <hr>
+        <form id="quizForm">
+            <!-- Questions will be dynamically injected here -->
+        </form>
+        <button id="submitBtn">Submit</button>
+        <p id="result"></p>
+    </div>
+    <script type="text/javascript" async
+   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const questions = [
+        // Each question object is structured as follows:
+        // { question: 'Question text', options: ['Option 1', 'Option 2', 'Option 3', 'Option 4'], answer: 'Correct Option' }
+        // {
+        //     question: "The system: x − y = 7; −x + y = 3 has ……….",
+        //     options: ["one solution", "no solution ", "infinitely many solutions", "two solutions"],
+        //     answer: "no solution "
+        // },
+        
+        {
+            question: "The resultant of two forces 8 N and 6 N is",
+            options: ["1N", "10N", "15N", "20N"],
+            answer: "10N"
+        },
+        {
+            question: "The height up to which water will rise in a capillary tube will be",
+            options: ["maximum at 4°c", "minimum at 4°c", "minimum at 0°c", "same at all temperature"],
+            answer: "minimum at 4°c"
+        },
+        {
+            question: "An iron cube floats in a vessel containing mercury at 20°c. If the temperature is increased by 100°c. the cube will float",
+            options: ["Lower", "higher", "at same level", "depends upon mass of cube"],
+            answer: "Lower"
+        },
+        {
+            question: "Water in a pond is heated by sun light. The temperature of water increases from top to bottom through",
+            options: ["conduction", "convection", "radiation", "all of these"],
+            answer: "conduction"
+        },
+        {
+            question: "Which of the following properties of sound is affected by change in air temperature?",
+            options: ["amplitude", "frequency", "wavelength", "intensity"],
+            answer: "wavelength"
+        },
+        {
+            question: "A plane glass slab is placed on the letter of different colours. The letters of which colour are raised by least amount?",
+            options: ["red", "yellow", "blue", "green"],
+            answer: "red"
+        },
+        {
+            question: "A strong magnetic field is applied on a stationary electron, then the electron",
+            options: ["moves in the direction of field", "moves in the opposite direction of field", "moves in the circular path", "remains stationary"],
+            answer: "remains stationary"
+        },
+        {
+            question: "The length of a conductor is halved, its conductivity will be",
+            options: ["doubled", "halved", "quadrupled", "unchange"],
+            answer: "unchange"
+        },
+        {
+            question: "With the increase in intensity of light",
+            options: ["photo electric current increases", "frequency increases", "max. KE increases", "photo electric current decreases"],
+            answer: "photo electric current increases"
+        },
+        
+        {
+            question: "A strong arguments for particle nature of cathode ray is",
+            options: ["produce fluorescence", "travel through vacuum", "gets deflected by electric and magnetic field", "to cast shadow"],
+            answer: "photo electric current increases"
+        },
+        {
+    question: "A car starts from rest and moves on a surface in which coefficient of friction between the road and tyres increases linearly with distance (x). The car moves with maximum possible acceleration. The KE of the car will depend on x as",
+    options: [
+        `\\(E ∝ \\frac{1}{x^2}\\)`,  // Correct usage of delimiters
+        `\\(E ∝ \\ x\\)`,
+        `\\(E ∝ \\frac{1}{x}\\)`,
+        `\\(E ∝ x^2\\)`
+    ],
+    answer: `\\(E ∝ x^2\\)`  // Match the correct answer with the option
+},
+        {
+    question: "The maximum height reached by a rocket fired with 90% of escape velocity from surface of earth is",
+    options: [
+        `90R`,  // Correct usage of delimiters
+        `\\(\\frac{19R}{81}\\)`,
+        `\\(\\frac{81R}{19}\\)`,
+        `\\(\\frac{81R}{100}\\)`
+    ],
+    answer: `\\(\\frac{81R}{19}\\)`  // Match the correct answer with the option
+},
+        {
+    question: "A particle undergoes SHM having time period T. The time taken in completing oscillation from mean position is",
+    options: [
+        `\\(\\frac{5}{12}T\\)`,  // Correct usage of delimiters
+        `\\(\\frac{3}{8}T\\)`,
+        `\\(\\frac{5}{8}T\\)`,
+        `\\(\\frac{7}{12}T\\)`
+    ],
+    answer: `\\(\\frac{5}{12}T\\)`  // Match the correct answer with the option
+},
+        {
+    question: "Two liquids of densities d, and d, are flowing in identical capillaries under same pressure difference. If t, and to are the time taken for the flow of equal mass of liquid, then the ratio of coefficients of viscosities of liquids will be",
+    options: [
+        `\\(\\frac{d_1t_1}{d₂t₂}\\)`,  // Correct usage of delimiters
+        `\\(\\frac{t_1}{t₂}\\)`,
+        `\\(\\frac{d₂t₂}{d_1t_1}\\)`,
+        `\\(\\sqrt{\\frac{d_1t_1}{d₂t₂}}\\)`
+    ],
+    answer: `\\(\\frac{d₁t₁}{d₂t₂}\\)`  // Match the correct answer with the option
+},
+        {
+    question: "The ratio of the radius of two spheres is 4:9  and specific heat is in the ratio 9: 4. The ratio of their thermal capacity is",
+    options: [
+        `81:16`,  // Correct usage of delimiters
+        `16:81`,
+        `3:2`,
+        `1:1`
+    ],
+    answer: `16:81`  // Match the correct answer with the option
+},
+        {
+    question: `Two waves are represented by y₁ = asin(ωt+\\(\\frac{π}{6}\\)) and y₂ = acosωt. Their rsultant amplitude is`,
+    options: [
+        `\\(\\sqrt{3}.a\\)`,  // Correct usage of delimiters
+        `\\(\\sqrt{2}.a\\)`,
+        `2a`,
+        `a`
+    ],
+    answer: `\\(\\sqrt{3}.a\\)`  // Match the correct answer with the option
+},
+        {
+    question: `The focal length of lens in air is 30 cm. Find the focal length of the lens in water (\\(µ_m\\) =1.33, µg = 1.5)`,
+    options: [
+        `120 cm`,  // Correct usage of delimiters
+        `20 cm`,
+        `90 cm`,
+        `60 cm`
+    ],
+    answer: `120 cm`  // Match the correct answer with the option
+},
+        {
+    question: `A bulb is situated at a height of 2m above the centre of a table. If the height is decreased by 1m, then percentage change in illumination at the centre of the table will be`,
+    options: [
+        `100% decrease`,  // Correct usage of delimiters
+        `300% increase`,
+        `300% decrease`,
+        `100% increase`
+    ],
+    answer: `300% increase`  // Match the correct answer with the option
+},
+        {
+    question: `A circuit has a self inductance of 1H and carries a current of 2A. To prevent sparking, when the circuit is broken, a capacitor which can withstand 400V is used. The least capacitance of the capacitor is`,
+    options: [
+        `125µF`,  // Correct usage of delimiters
+        `100µF`,
+        `25µF`,
+        `50µF`
+    ],
+    answer: `25µF`  // Match the correct answer with the option
+},
+        {
+    question: `Two wires of same length are shaped into a square and circle. If they carry same current, ratio of the magnetic moments is`,
+    options: [
+        `π : 4`,  // Correct usage of delimiters
+        `π : 2`,
+        `2 : π`,
+        `4 : π`
+    ],
+    answer: `π : 4`  // Match the correct answer with the option
+},
+        {
+    question: `Resistors of resistance 1 ohm each are connected as shown in figure with 15V battery. Current in the circuit is <img src="/Engineer/circuits/circuit.png" alt="prakash403"> `,
+    options: [
+        `5.3 A`,  // Correct usage of delimiters
+        `3.5 A`,
+        `3.4 A`,
+        `4.3 A`
+    ],
+    answer: `4.3 A`  // Match the correct answer with the option
+},
+        {
+    question: `Three charges +2q, -q and -q kept at the vertices of an equilateral triangle of side l then electric field intensity at the centroid of the triangle is`,
+    options: [
+        `\\(\\frac{3q}{4πε_0l^2}\\)`,  // Correct usage of delimiters
+        `\\(\\frac{9q}{4πε_0l^2}\\)`,
+        `\\(\\frac{2q}{4πε_0l^2}\\)`,
+        `\\(\\frac{q}{4πε_0l^2}\\)`
+    ],
+    answer: `\\(\\frac{9q}{4πε_0l^2}\\)`  // Match the correct answer with the option
+},
+        {
+    question: `The wavelength λ  has stopping potential V. The stopping potential for same surface of wavelength 2λ is \\(\\frac{v}{3}\\).  The threshold wavelength is  `,
+    options: [
+        `\\(\\frac{4λ}{3}\\)`,  // Correct usage of delimiters
+        `4λ`,
+        `6λ`,
+        `\\(\\frac{8λ}{3}\\)`
+    ],
+    answer: `4λ`  // Match the correct answer with the option
+},
+
+        
+        
+        {
+    question: `Wavelength of \\(k_α\\) line from an element of atomic no. 51 is λ. The wavelength is 4λ for \\(k_α\\) line of atomic no.
+`,
+    options: [
+        `25`,  // Correct usage of delimiters
+        `26`,
+        `99`,
+        `100`
+    ],
+    answer: `26`  // Match the correct answer with the option
+},
+        {
+    question: `After 24 hours, the activity of a radioactive sample is 2000 disintegrations/sec. After another 12 hours, the activity reduces to 1000 disintegration/sec. The initial activity of source is`,
+    options: [
+        `10000`,  // Correct usage of delimiters
+        `8000`,
+        `4000`,
+        `6000`
+    ],
+    answer: `8000`  // Match the correct answer with the option
+},
+
+        
+        
+       
+        //    ------------------------------------------------------------------------------
+
+
+
+
+
+
+        
+        //    ------------------------------------------------------------------------------
+
+        
+        
+    ];
+
+    const quizForm = document.getElementById('quizForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const result = document.getElementById('result');
+    
+    questions.forEach((q, index) => {
+        const questionDiv = document.createElement('div');
+        questionDiv.classList.add('question');
+    
+        const questionP = document.createElement('p');
+        questionP.innerHTML = `${index + 1}. ${q.question}`; // Use innerHTML to include HTML content
+        questionDiv.appendChild(questionP);
+    
+        const optionsUl = document.createElement('ul');
+        optionsUl.classList.add('options');
+    
+        q.options.forEach((option) => {
+            const optionLi = document.createElement('li');
+    
+            const optionInput = document.createElement('input');
+            optionInput.type = 'radio';
+            optionInput.name = `question${index}`;
+            optionInput.value = option;
+    
+            // Check if the option is the correct answer
+            if (option === q.answer) {
+                optionInput.classList.add('correct');
+            } else {
+                optionInput.classList.add('incorrect');
+            }
+    
+            const optionLabel = document.createElement('label');
+            optionLabel.textContent = option;
+    
+            optionLi.appendChild(optionInput);
+            optionLi.appendChild(optionLabel);
+            optionsUl.appendChild(optionLi);
+        });
+    
+        questionDiv.appendChild(optionsUl);
+        quizForm.appendChild(questionDiv);
+    });
+    
+    submitBtn.addEventListener('click', () => {
+        let score = 0;
+    
+        // Loop through all questions to check answers
+        questions.forEach((q, index) => {
+            const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
+    
+            if (selectedOption) {
+                const isCorrect = selectedOption.value === q.answer;
+                if (isCorrect) {
+                    score++;
+                }
+            }
+        });
+    
+        // Display the result
+        result.textContent = `You scored ${score} out of ${questions.length}`;
+    });
+});    
+    </script>
+
+    <!-- ----------------------------------footer----------------------------- -->
+    <footer>
+<hr>
+<p class="footer">copyright © 2024-50 all right reserve</p>
+    </footer>
+</body>
+
+</html>
