@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="ioe math mcqs solution, old mcq questions,ioe Mathematics old questions,ioe math entrance mcqs solution,entrance mcqs solution of maths ioe,mcq math ioe civil engineering">
+    <title>IOE math mcqs for entrance exam</title>
+    <link rel="stylesheet" href="IOE.css">
+    <link rel="icon" href="/images/favicon prakash403.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <h1>IOE <span>Mathematics</span> MCQ For Entrance Exam Preparation</h1>
+        <p>Total questions: 30 + 1 Extra</p>
+        <hr>
+        <form id="quizForm">
+            <!-- Questions will be dynamically injected here -->
+        </form>
+        <button id="submitBtn">Submit</button>
+        <p id="result"></p>
+    </div>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const questions = [
+                // Each question object is structured as follows:
+                // { question: 'Question text', options: ['Option 1', 'Option 2', 'Option 3', 'Option 4'], answer: 'Correct Option' }
+                // {
+                //     question: "The system: x − y = 7; −x + y = 3 has ……….",
+                //     options: ["one solution", "no solution ", "infinitely many solutions", "two solutions"],
+                //     answer: "no solution "
+                // },
+
+                {
+                    question: "If the equations \\(x^2 + bx + c = 0\\) and \\(x^2 + dx + e = 0\\) have both common roots, then:",
+                    options: ["\\(bc = de\\)", "\\(bd = ce\\)", "\\({be = cd}\\)", "\\(b^2d = c^2e\\)"],
+                    answer: "\\({be = cd}\\)"
+                },
+                {
+                    question: "If the sum of the first ‘n’ natural numbers is \\(\\frac{1}{5}\\) and the sum of their squares, then the value is:",
+                    options: ["5", "6", "7", "8"],
+                    answer: "7"
+                },
+                {
+                    question: "If A and B are arbitrary square matrices of the same order, then which of the following is always true?",
+                    options: ["\\((AB)^T = A^T B^T\\)", "\\((A^T)^T (B^T)^T = BA\\)", "Adj. A = A", "\\((AB)^T = B^T A^T\\)"],
+                    answer: "\\((AB)^T = B^T A^T\\)"
+                },
+                {
+                    question: "If \\(A = \\{1, 3, 4, 7\\}\\) and \\(B = \\{3, 4\\}\\), then \\(n((A \\times B) \\cap (B \\times A))\\) equals:",
+                    options: ["2", "4", "6", "8"],
+                    answer: "4"
+                },
+                {
+                    question: "Projection of \\(\\mathbf{b}\\) on \\(\\mathbf{a}\\) is:",
+                    options: [
+                        "\\(\\mathbf{\\frac{\\mathbf{a^→} \\cdot \\mathbf{b^→}}{\\mathbf{|a^→|}}}\\)",
+                        "\\(\\frac{\\mathbf{a^→} \\times \\mathbf{b^→}}{\\mathbf{|b^→|}}\\)",
+                        "\\(\\frac{\\mathbf{|a^→} \\times \\mathbf{b^→|}}{\\mathbf{|a^→|}}\\)",
+                        "\\(\\frac{\\mathbf{|a^→} \\times \\mathbf{b^→|}}{\\mathbf{|b^→|}}\\)"
+                    ],
+                    answer: "\\(\\frac{\\mathbf{|a^→} \\times \\mathbf{b^→|}}{\\mathbf{|a^→|}}\\)"
+                },
+                {
+                    question: "The parametric equations are \\(x = a\\cos\\theta\\), \\(y = a\\sin\\theta\\). The locus of the point is:",
+                    options: ["Circle", "Parabola", "Straight line", "Ellipse"],
+                    answer: "Circle"
+                },
+                {
+                    question: "The circumference of the circle \\(x^2 + y^2 - 4x - 6y - 12 = 0\\) is:",
+                    options: ["\\(12\\pi\\)", "\\(9\\pi\\)", "\\({15\\pi}\\)", "\\(10\\pi\\)"],
+                    answer: "\\(10\\pi\\)"
+                },
+                {
+                    question: "The vertex of the parabola \\(y^2 = 4ax + 4a^2\\) is:",
+                    options: ["(0, 0)", "(a, 0)", "(0, a)", "(-a, 0)"],
+                    answer: "(-a, 0)"
+                },
+                {
+                    question: "If \\(\\alpha, \\beta, \\gamma\\) are the angles made by a line with the axes, then the value of \\(\\sin^2\\alpha + \\sin^2\\beta + \\sin^2\\gamma\\) is:",
+                    options: ["1", "2", "3", "4"],
+                    answer: "2"
+                },
+                {
+                    question: "If \\(Z = 1 + i\\), then the multiplicative inverse of \\(Z^2\\) is:",
+                    options: ["\\(-\\frac{1}{2}\\)", "\\(-\\frac{i}{2}\\)", "1", "\\({\\frac{1}{2}}\\)"],
+                    answer: "\\(-\\frac{i}{2}\\)"
+                },
+                {
+                    question: "For two events A and B, if \\(P(A \\cap B) = \\frac{1}{4}\\) and \\(P(\\bar{B}) = \\frac{5}{8}\\), then \\(P(A/B)\\) equals:",
+                    options: ["\\(\\frac{1}{3}\\)", "\\({\\frac{2}{3}}\\)", "\\(\\frac{1}{2}\\)", "\\(\\frac{3}{5}\\)"],
+                    answer: "\\({\\frac{2}{3}}\\)"
+                },
+                {
+                    question: "The sum \\(22! + 33! + 44! + \\dots\\) to \\(\\infty\\) equals:",
+                    options: ["\\(e - 1\\)", "\\({e - 2}\\)", "\\(e\\)", "\\(e - 1\\)"],
+                    answer: "\\(e - 1\\)"
+                },
+                {
+                    question: "\\(\\frac{e^{1/x}}{e^{1/x} + 1}\\) equals:",
+                    options: ["-1", "0", "1", "\\(\\infty\\)"],
+                    answer: "1"
+                },
+                {
+                    question: "If \\(y = \\sin^{-1}(3x - 4x^3)\\), then \\(\\frac{dy}{dx}\\) equals:",
+                    options: [
+                        "\\(\\frac{1}{\\sqrt{1 - x^2}}\\)",
+                        "\\({\\frac{3}{\\sqrt{1 - x^2}}}\\)",
+                        "\\(\\frac{4x}{\\sqrt{1 - x^2}}\\)",
+                        "\\(-\\frac{3}{\\sqrt{1 - x^2}}\\)"
+                    ],
+                    answer: "\\({\\frac{3}{\\sqrt{1 - x^2}}}\\)"
+                },
+                {
+                    question: "\\(\\int\\frac{sin^4 x}{cos^6 x}dx\\) equals:",
+                    options: ["\\(\\frac{1}{3} tan^3 x +c\\)", "\\(\\frac{(secx+tanx)^5}{5}+c\\)", "\\(sec^\\frac{5}{2} + c\\)", "\\(\\frac{1}{5}\\tan^5x + c\\)"],
+                    answer: "\\(\\frac{1}{5}\\tan^5x + c\\)"
+                },
+                
+                {
+                    question: "The point on the curve \\(x^2 + y^2 = 25\\) where the tangent is parallel to the x-axis is:",
+                    options: ["(±5, 0)", "(0, ±5)", "(±25, 0)", "(0, ±25)"],
+                    answer: "(0, ±5)"
+                },
+                {
+                    question: "If the integrating factor of \\(\\frac{dy}{dx} + Py = Q\\) is \\(\\sec x\\), then the value of P is:",
+                    options: ["\\(\\log_e \\sec x\\)", "\\(tan x\\)", "\\(\\sin x\\)", "\\(\\cos x\\)"],
+                    answer: "\\(tan x\\)"
+                },
+                {
+                    question: "The area enclosed by the curve \\(xy = 1\\), x-axis, and x = 1 to x = 3 is:",
+                    options: ["\\(\\ln 5\\) sq. units", "\\(\\log 2\\) sq. units", "\\({\\log 3}\\) sq. units", "\\(\\log 4\\) sq. units"],
+                    answer: "\\({\\log 3}\\) sq. units"
+                },
+                {
+                    question: "The domain and range of the function \\(y = \\frac{x^2}{1 + x^2}\\) are:R!R",
+                    options: ["\\(R, R\\)", "\\(R, [0, \\infty)\\)", "\\({R, [0, 1)}\\)", "\\( [0, \\infty)\\),\\( [0, \\infty)\\)"],
+                    answer: "\\({R, [0, 1)}\\)"
+                },
+                {
+                    question: "If \\((1 + x)^n = C_0 + C_1x + C_2x + \\dots + C_nx^2\\), then \\(C_0 + \\frac{C_1}{2} + \\frac{C_2}{3} + \\dots + \\frac{C_n}{n+1}\\) equals:",
+                    options: ["\\(\\mathbf{\\frac{2^{n+1} + 1}{n+1}}\\)", "\\(\\frac{2^{n+1} - 1}{n+1}\\)", "\\(\\frac{2^n + 1}{n-1}\\)", "\\(\\frac{2^n - 1}{n-1}\\)"],
+                    answer: "\\(\\frac{2^{n+1} - 1}{n+1}\\)"
+                },
+                {
+                    question: "The total number of arrangements of letters in the word ‘SOCIETY’ such that vowels and consonants alternate is:",
+                    options: ["7!", "\\(3 \\times 4!\\)", "\\(4! \\times 3!\\)", "\\(2 \\times 3! \\times 4!\\)"],
+                    answer: "\\(4! \\times 3!\\)"
+                },
+                {
+                    question: "If \\(x + \\frac{1}{x} = -1\\), then the value of \\(x^{2010} + \\frac{1}{x^{2010}}\\) is:",
+                    options: ["9", "2", "3", "4"],
+                    answer: "2"
+                },
+                {
+                    question: "If \\(a^→\\), \\(b^→\\), \\(c^→\\) are any three unit vectors with \\(a^→\\) + \\(b^→\\) + \\(a^→\\)=0, then the angle between the vectors \\(b^→\\) and \\(c^→\\) is:",
+                    options: ["30⁰", "60⁰", "120⁰", "135⁰"],
+                    answer: "120⁰"
+                },
+                {
+                    question: "If the pair of straight lines \\(ax^2 + 2hxy - ay^2 = 0\\) and \\(bx^2 + 2gxy - by^2 = 0\\) are such that each pair bisects the angle between the other, then:",
+                    options: ["\\(ag + bh = 0\\)", "\\(gh + ab = 0\\)", "\\(bg + ah = 0\\)", "\\({h^2 = ab}\\)"],
+                    answer: "\\(gh + ab = 0\\)"
+                },
+                {
+                    question: "If two circles \\(x^2 + y^2 = a^2\\) and \\((x - c)^2 + y^2 = b^2\\) touch externally, then:",
+                    options: ["a - b = c", "a + 2c = b", "a + b = c", "a + 1 + c = 0"],
+                    answer: "a + b = c"
+                },
+                {
+                    question: "If the line \\(ty = x = at^2\\) touches the parabola \\(y^2 = 4ax\\), then the point of contact is:",
+                    options: ["\\((2a, 2a\\))", "\\((2at, at²\\))", "\\((at^2, 2at\\))", "\\((at, at\\))"],
+                    answer: "\\((at^2, 2at\\))"
+                },
+                {
+                    question: "In the ellipse, if the distance between its foci is 6 and the minor axis is 8, then the eccentricity is:",
+                    options: ["\\(\\mathbf{\\frac{2}{5}}\\)", "\\(\\mathbf{\\frac{3}{5}}\\)", "\\(\\mathbf{\\frac{\\sqrt{3}}{5}}\\)", "\\(\\mathbf{\\frac{1}{2}}\\)"],
+                    answer: "\\(\\mathbf{\\frac{3}{5}}\\)"
+                },
+                {
+                    question: "A variable plane is at a constant distance ‘3p’ from the origin and meets the axes at points A,B,C. Then the locus of the centroid of triangle ABC is:",
+                    options: [
+                        "\\(\\mathbf{\\frac{1}{x^2} + \\frac{1}{y^2} + \\frac{1}{z^2} = \\frac{3}{p^2}}\\)",
+                        "\\(x^2 + y^2 + z^2 = 3p^2\\)",
+                        "\\(\\frac{1}{x^2} + \\frac{1}{y^2} + \\frac{1}{z^2} = \\frac{1}{p^2}\\)",
+                        "x² + y² + z² = p²"
+                    ],
+                    answer: "\\(\\frac{1}{x^2} + \\frac{1}{y^2} + \\frac{1}{z^2} = \\frac{1}{p^2}\\)"
+                },
+                {
+                    question: "If \\(abc\\) are in AP, then \\(\\tan \\frac{A}{2}\\tan \\frac{C}{2}\\) equals:",
+                    options: ["\\(\\frac{1}{2}\\)", "a + b + c", "R", "1"],
+                    answer: "1"
+                },
+                {
+                    question: "A man of height 2m walks directly away from a lamp of height 5m on a level road at 3 m/s. Then the rate at which the length of his shadow is increasing is:",
+                    options: ["2 m/s", "1.5 m/s", "3 m/s", "4 m/s"],
+                    answer: "2 m/s"
+                },
+                {
+                    question: "If \\(f(x) = ax + b\\) and \\(f(0) = f'(0) = 1\\), then the value of \\(f(2)\\) is:",
+                    options: ["0", "1", "2", "3"],
+                    answer: "3"
+                },
+               
+
+
+
+                //    ------------------------------------------------------------------------------
+
+
+
+
+
+
+
+                //    ------------------------------------------------------------------------------
+
+
+
+            ];
+
+            const quizForm = document.getElementById('quizForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const result = document.getElementById('result');
+
+            questions.forEach((q, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.classList.add('question');
+
+                const questionP = document.createElement('p');
+                questionP.innerHTML = `${index + 1}. ${q.question}`; // Use innerHTML to include HTML content
+                questionDiv.appendChild(questionP);
+
+                const optionsUl = document.createElement('ul');
+                optionsUl.classList.add('options');
+
+                q.options.forEach((option) => {
+                    const optionLi = document.createElement('li');
+
+                    const optionInput = document.createElement('input');
+                    optionInput.type = 'radio';
+                    optionInput.name = `question${index}`;
+                    optionInput.value = option;
+
+                    // Check if the option is the correct answer
+                    if (option === q.answer) {
+                        optionInput.classList.add('correct');
+                    } else {
+                        optionInput.classList.add('incorrect');
+                    }
+
+                    const optionLabel = document.createElement('label');
+                    optionLabel.textContent = option;
+
+                    optionLi.appendChild(optionInput);
+                    optionLi.appendChild(optionLabel);
+                    optionsUl.appendChild(optionLi);
+                });
+
+                questionDiv.appendChild(optionsUl);
+                quizForm.appendChild(questionDiv);
+            });
+
+            submitBtn.addEventListener('click', () => {
+                let score = 0;
+
+                // Loop through all questions to check answers
+                questions.forEach((q, index) => {
+                    const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
+
+                    if (selectedOption) {
+                        const isCorrect = selectedOption.value === q.answer;
+                        if (isCorrect) {
+                            score++;
+                        }
+                    }
+                });
+
+                // Display the result
+                result.textContent = `You scored ${score} out of ${questions.length}`;
+            });
+        });    
+    </script>
+
+    <!-- ----------------------------------footer----------------------------- -->
+    <footer>
+        <hr>
+        <p class="footer">copyright © 2024-50 all right reserve</p>
+    </footer>
+</body>
+
+</html>
