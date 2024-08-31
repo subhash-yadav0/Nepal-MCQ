@@ -84,5 +84,11 @@ button:hover {
     text-align: center;
 }
 h1 span{
-    color: rgb(2, 189, 2);
+    color: #02bd02;
+}
+
+.more{
+    text-decoration: none;
+    color: black;
+    display: none;
 }

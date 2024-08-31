@@ -18,6 +18,7 @@
         <form id="quizForm">
             <!-- Questions will be dynamically injected here -->
         </form>
+        <a class="more" href="/Engineer/100-Physics-MCQ-For-IOE-Entrance-Exam-Preparation.html">Practice More <i class="fa-solid fa-forward-fast fa-fade"></i></a>
         <button id="submitBtn">Submit</button>
         <p id="result"></p>
     </div>
@@ -322,12 +323,23 @@
     });
 });    
     </script>
+<script>
+    const more = document.querySelector('.more');
+const submitBtn = document.getElementById('submitBtn');
 
+submitBtn.addEventListener('click', function() {
+    setTimeout(function() {
+        more.style.display = "block";
+    }, 3000);
+});
+
+</script>
     <!-- ----------------------------------footer----------------------------- -->
     <footer>
 <hr>
 <p class="footer">copyright © 2024-50 all right reserve</p>
     </footer>
+    <script src="https://kit.fontawesome.com/ed0e6a4d5a.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -587,3 +587,13 @@ document.addEventListener("DOMContentLoaded", function () {
         result.textContent = `You scored ${score} out of ${questions.length}`;
     });
 });    
+
+
+const more = document.querySelector('.more');
+const submitBtn = document.getElementById('submitBtn');
+
+submitBtn.addEventListener('click', function() {
+    setTimeout(function() {
+        more.style.display = "block";
+    }, 3000);
+});
