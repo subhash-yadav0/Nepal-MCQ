@@ -45,7 +45,7 @@ menuButton.addEventListener('click', () => {
 ScrollReveal().reveal('.mcqimg',{delay:500,origin:'top', interval: 200});
 ScrollReveal().reveal('.headdown',{delay:500,origin:'top', interval: 200});
 ScrollReveal().reveal('.title',{delay:500,origin:'top', interval: 200});
-ScrollReveal().reveal('.big-btn',{delay:100,origin:'bottom', interval: 200});
+ScrollReveal().reveal('.big-btn',{delay:50,origin:'bottom', interval: 50});
 ScrollReveal().reveal('.toggle-label,.toggle-content',{delay:500,origin:'top', interval: 200});
 
 // -------------------------------cdn----------------------------

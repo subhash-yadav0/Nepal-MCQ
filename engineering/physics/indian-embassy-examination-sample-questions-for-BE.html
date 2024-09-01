@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="indian-embassy-examination-sample-questions-for-BE, indian embassy examination sample questions for BE,BE,BE physics old questions,BE old questions solutions,ioe old questions of civil engineering,mcq physics BE,mcq physics ioe civil engineering">
+    <title>indian embassy examination sample questions for BE</title>
+    <link rel="stylesheet" href="/engineering/main modules/IOE.css">
+    <link rel="icon" href="/images/favicon prakash403.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <h1>BE <span>Physics </span>For indian embassy examination sample questions Model-1</h1>
+        <p>Total questions: 30</p>
+        <hr>
+        <form id="quizForm">
+            <!-- Questions will be dynamically injected here -->
+        </form>
+        <a class="more" href="/engineering/physics/100-Physics-MCQ-For-IOE-Entrance-Exam-Preparation.html">Practice More <i class="fa-solid fa-forward-fast fa-fade"></i></a>
+        <button id="submitBtn">Submit</button>
+        <p id="result"></p>
+    </div>
+    <script type="text/javascript" async
+   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const questions = [
+        // Each question object is structured as follows:
+        // { question: 'Question text', options: ['Option 1', 'Option 2', 'Option 3', 'Option 4'], answer: 'Correct Option' }
+        // {
+        //     question: "The system: x − y = 7; −x + y = 3 has ……….",
+        //     options: ["one solution", "no solution ", "infinitely many solutions", "two solutions"],
+        //     answer: "no solution "
+        // },
+        
+        {
+            question: "The dimensional formula of Planck's constant is same as that of",
+            options: ["momentum", "energy", "work", "angular momentum"],
+            answer: "angular momentum"
+        },
+        {
+            question: "A body starting from rest slides on an inclined plane of length \\({l}\\) and inclination θ. The time in which body reaches at bottom of inclined plane is",
+            options: ["\\({l}\\sqrt\\frac{2}{gh}\\)", "\\(\\sqrt\\frac{g sin \\theta}{l}\\)", "\\(\\sqrt\\frac{gh}{2l}\\)", "\\(\\sqrt\\frac{gh}{g sin \\theta}\\)"],
+            answer: "\\({l}\\sqrt\\frac{2}{gh}\\)"
+        },
+        {
+            question: "The position coordinates of a moving particle at any time 't' are given by x = ct² and y = bt² then the velocity of body at time 't' is given by",
+            options: ["2t (c - b)", "\\(\\sqrt{c^2 + b^2}\\)", "2t \\(\\sqrt{c^2 + b^2}\\)", "2t \\(\\sqrt{c^2  b^2}\\)"],
+            answer: "2t \\(\\sqrt{c^2 + b^2}\\)"
+        },
+        {
+            question: "A chain is held on a frictionless table with \\((1/n)^{\{th}}\\) of its length hanging over the edge. If chain has a length \\(l\\) and mass M, the work done to pull the hanging part on table is",
+            options: ["\\(\\frac{Mgl}{2n}\\)", "\\(\\frac{Mgl}{4n}\\)", "\\(\\frac{Mgl}{2n^2}\\)", "\\(\\frac{Mgl}{n^2}\\)"],
+            answer: "\\(\\frac{Mgl}{2n^2}\\)"
+        },
+        {
+            question: "A string is wrapped around the rim of a wheel of moment of inertia 0.2 kg m² and radius 20cm. The wheel is free to rotate about it's axis and initially is at rest. The string is pulled by a force of 20N then angular velocity after  5 sec  will be",
+            options: ["20 rad/s", "40 rad/s", "80 rad/s", "100 rad/s"],
+            answer: "100 rad/s"
+        },
+        {
+            question: ". A long cylindrical glass vessel has a small hole of radius 'r' at it's bottom. The depth to which the vessel can be lowered vertically in a deep water bath of surface tension T, without any water entering inside is",
+            options: ["\\(\\frac{4T}{rpg}\\)", "\\(\\frac{3T}{rpg}\\)", "\\(\\frac{2T}{rpg}\\)", "\\(\\frac{T}{rpg}\\)"],
+            answer: "\\(\\frac{2T}{rpg}\\)"
+        },
+        {
+            question: "The plate separation in a parallel plate capacitor is 'd' and plate area is 'A'. If it is charged to a potential V then work done in increasing the plate separation to 2d is",
+            options: ["\\(\\frac{∈_0 AV^2}{d}\\)", "\\(\\frac{∈_0 AV^2}{2d}\\)", "\\(\\frac{∈_0 AV^2}{2d^2}\\)", "\\(\\frac{∈_0 AV^2}{4d^2}\\)"],
+            answer: "\\(\\frac{∈_0 AV^2}{2d}\\)"
+        },
+        {
+            question: "A proton and \\(α\\) particle is at a distance 'r' from each other. After letting them free, if they move to infinity the KE of proton will be",
+            options: ["\\(\\frac{2e^2}{4πε_0 r}\\)", "\\(\\frac{8e^2}{4πε_0 r}\\)", "\\(\\frac{e^2}{4πε_0 r}\\)", "\\(\\frac{2e^2}{20πε_0 r}\\)"],
+            answer: "\\(\\frac{2e^2}{20πε_0 r}\\)"
+        },
+        {
+            question: "Each corner of a cube of slide '\\(l\\)' has a negative charge  -q. The electrostatic potential energy of a charge q at the centre of the cube is",
+            options: ["\\(\\frac{-4q^2}{\\sqrt{2}πε_0 l}\\)", "\\(\\frac{\\sqrt{3}q^2}{4πε_0 l}\\)", "\\(\\frac{4q^2}{\\sqrt{2}πε_0 l}\\)", "\\(\\frac{-4q^2}{\\sqrt{3}πε_0 l}\\)"],
+            answer: "photo electric current increases"
+        },
+        
+        {
+            question: "The resistance of galvanometer in which maximum deflection of 50 div. is reduced to 20 div. when shunted by a 22Ω resistance is",
+            options: ["18Ω", "20Ω", "15Ω", "10Ω"],
+            answer: "18Ω"
+        },
+        {
+    question: `Four resistance are connected as shown in the figure. A battery of V is connected between A and C. The potential difference between B and D is <img src="/engineering/circuits/circuit 2.png" alt="indian-embassy-examination-sample-questions-for-BE"> `,
+    options: [
+        `2V/3`,  // Correct usage of delimiters
+        `4V/3`,
+        `5V/3`,
+        `V/3`
+    ],
+    answer: `V/3`  // Match the correct answer with the option
+},
+        {
+    question: "A charge moving with velocity v in x axis is subjected a field of magnetic induction in negative x direction. The charge will",
+    options: [
+        `remain unaffected`,  // Correct usage of delimiters
+        `start to move in circular path in y - 2 plane`,
+        `Retard along x axis`,
+        `move along helical path around x axis`
+    ],
+    answer: `remain unaffected`  // Match the correct answer with the option
+},
+        {
+    question: "A magnet of magnetic moment M is lying in a magnetic field of induction B, w₁ is the work done in turning it from 0° to 60° and w₂ be the work done in turning it from 30° to 90° then",
+    options: [
+        `\\(w_2=w_1\\)`,  // Correct usage of delimiters
+        `\\(w_2=w_1/2\\)`,
+        `\\(w_2=2w_1\\)`,
+        `\\(w_2=\\sqrt{3}w_1\\)`
+    ],
+    answer: `\\(\\frac{5}{12}T\\)`  // Match the correct answer with the option
+},
+        {
+    question: "Self inductance of a coil in which an emf of 10v is induced when the current changes from 1A to 0.5A in 0.2 sec is",
+    options: [
+        `4H`,  // Correct usage of delimiters
+        `5H`,
+        `6H`,
+        `2H`
+    ],
+    answer: `4H`  // Match the correct answer with the option
+},
+        {
+    question: "A biconvex lens whose both the surfaces have same radii of curvature has a power of 5D. The refractive index of material lens is 1.5. The radius of curvature of each surface is",
+    options: [
+        `20cm`,  // Correct usage of delimiters
+        `15cm`,
+        `10cm`,
+        `5cm`
+    ],
+    answer: `20cm`  // Match the correct answer with the option
+},
+        {
+    question: `The refractive index of prism is \\(\\sqrt{2}\\) and refracting angle is 30°. If one of the refracting surface is silvered then monochromatic beam reface its path. The angle of incidence at one of the refracting surface is`,
+    options: [
+        `0º`,  // Correct usage of delimiters
+        `30º`,
+        `45º`,
+        `60º`
+    ],
+    answer: `45º`  // Match the correct answer with the option
+},
+        {
+    question: `Two coherent sources of intensity have ratio 2:8 produce an interference pattern. The value of maximum and minimum intensity will be`,
+    options: [
+        `\\(I\\) and \\(9I\\)`,  // Correct usage of delimiters
+        `\\(9I\\) and \\(I\\)`,
+        `\\(2I\\) and \\(8I\\)`,
+        `\\(8I\\) and \\(2I\\)`
+    ],
+    answer: `\\(9I\\) and \\(I\\)`  // Match the correct answer with the option
+},
+        {
+    question: `A Young's double slit experiment uses a monochromatic source. The shape of interference fringe formed on a screen will be `,
+    options: [
+        `circle`,  // Correct usage of delimiters
+        `hyperbola`,
+        `parabola`,
+        `straight line`
+    ],
+    answer: `straight line`  // Match the correct answer with the option
+},
+        {
+    question: `Two rods of lengths \\(l_1\\) and \\(l_2\\) of linear expansively \\(α_1\\) and \\(α_2\\) are joined to form a single rod o length \\(l_1\\)+\\(l_2\\). If each rod increased by same amount on heating of length \\(l_1\\)+\\(l_2\\). If each rod increased by same amount on temperature then \\(\\frac{l_1}{l_+l_2}\\) is`,
+    options: [
+        `\\(\\frac{α_2}{α_1}\\)`,  // Correct usage of delimiters
+        `\\(\\frac{α_1}{α_2}\\)`,
+        `\\(\\frac{α_2}{α_1 + α_2}\\)`,
+        `\\(\\frac{α_1}{α_1 + α_2}\\)`
+    ],
+    answer: `\\(\\frac{α_2}{α_1 + α_2}\\)`  // Match the correct answer with the option
+},
+        {
+    question: `Steam is passed into 22g of water at 20ºC. The mass of water that will be present when water acquires a temperature at 90ºC is`,
+    options: [
+        `24.8 g`,  // Correct usage of delimiters
+        `24 g`,
+        `36.6 g`,
+        `30 g`
+    ],
+    answer: `24.8 g`  // Match the correct answer with the option
+},
+        {
+    question: `If the ratio of specific heat of a gas at constant pressure to that at constant volume is \\(γ\\). The charge in internal energy of the mass of gas when the volume changes from V to 2V at constant pressure is`,
+    options: [
+        `\\(\\frac{R}{γ-1}\\)`,  // Correct usage of delimiters
+        `\\(PV\\)`,
+        `\\(\\frac{PV}{γ-1}\\)`,
+        `\\(\\frac{γPV}{γ-1}\\)`
+    ],
+    answer: `\\(\\frac{PV}{γ-1}\\)`  // Match the correct answer with the option
+},
+        {
+    question: `A cylinder of radius \\(R\\) is made by material of thermal conductivity \\(K_1\\) is surrounded by a cylindrical shell of outer radius \\(2R\\) and conductivity \\(K_2\\). Two ends are maintained at different temperature then equivalent conductivity will be`,
+    options: [
+        `\\(K_1+K_2\\)`,  // Correct usage of delimiters
+        `\\(\\frac{K_1K_2}{K_1+K_2}\\)`,
+        `\\(\\frac{K_1+3K_2}{4}\\)`,
+        `\\(\\frac{3K_1+K_2}{4}\\)`
+    ],
+    answer: `\\(\\frac{K_1+3K_2}{4}\\)`  // Match the correct answer with the option
+},
+        {
+    question: `A mass m is vertically suspended from a spring of negligible mass the system oscillated with frequency f then frequency of oscillation if a mass 4m is suspended from same spring is`,
+    options: [
+        `f/4`,  // Correct usage of delimiters
+        `4f`,
+        `f/2`,
+        `2f`
+    ],
+    answer: `f/2`  // Match the correct answer with the option
+},
+
+        
+        
+        {
+    question: `The length of a closed pipe to produce a fundamental frequency of 512 Hz at 0º c is`,
+    options: [
+        `15.3cm`,  // Correct usage of delimiters
+        `15.7cm`,
+        `16.2cm`,
+        `16.8cm`
+    ],
+    answer: `16.2cm`  // Match the correct answer with the option
+},
+        {
+    question: `The frequency of a whistle of an engine appears to be \\((\\frac{4}{5})^\\text{th}\\) of initial frequency when it crosses the stationary observer. The velocity of sound is 330m/sec then speed of engine is`,
+    options: [
+        `30m/s`,  // Correct usage of delimiters
+        `36.6m/s`,
+        `40m/s`,
+        `330m/s`
+    ],
+    answer: `36.6m/s`  // Match the correct answer with the option
+},
+        {
+    question: `The ionization potential energy of hydrogen atom in its ground state is 13.6ev. The excitation potential for \\(3^\\text{rd}\\) orbit is`,
+    options: [
+        `0.54v`,  // Correct usage of delimiters
+        `0.66v`,
+        `0.7v`,
+        `0.97v`
+    ],
+    answer: `0.66v`  // Match the correct answer with the option
+},
+
+        
+        {
+    question: `Half life of radioactive substance whose amount reduces to \\((\\frac{1}{64})^\\text{th}\\) of it's initial activity in 15 hours is`,
+    options: [
+        `2 hrs`,  // Correct usage of delimiters
+        `2.5 hrs`,
+        `3 hrs`,
+        `4 hrs`
+    ],
+    answer: `2.5 hrs`  // Match the correct answer with the option
+},
+        {
+    question: `Energy released per fission of uranium is 200 Mev. The number of fission per second in a reactor of 2Mw power is`,
+    options: [
+        `\\(8×10^\\text{16}\\)`,  // Correct usage of delimiters
+        `\\(2.25×10^\\text{16}\\)`,
+        `\\(6.25×10^\\text{16}\\)`,
+        `\\(12.25×10^\\text{16}\\)`
+    ],
+    answer: `\\(6.25×10^\\text{16}\\)`  // Match the correct answer with the option
+},
+        {
+    question: `An \\(α\\) particle move in a circular path of radius 0.83 cm in the presence of magnetic field of 0.25wb/m². The De Broglie's wavelength is`,
+    options: [
+        `1Å`,  // Correct usage of delimiters
+        `0.1Å`,
+        `0.01Å`,
+        `0.001Å`
+    ],
+    answer: `0.01Å`  // Match the correct answer with the option
+},
+
+        
+        {
+    question: `In semi conductor at room temperature`,
+    options: [
+        `conduction band in completely empty`,  // Correct usage of delimiters
+        `valence & conduction band are partially filled`,
+        `Valance band is partially filled and conduction band is empty`,
+        `Valance band is completely filled`
+    ],
+    answer: `valence & conduction band are partially filled`  // Match the correct answer with the option
+},
+
+        
+        
+       
+        //    ------------------------------------------------------------------------------
+
+
+
+
+
+
+        
+        //    ------------------------------------------------------------------------------
+
+        
+        
+    ];
+
+    const quizForm = document.getElementById('quizForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const result = document.getElementById('result');
+    
+    questions.forEach((q, index) => {
+        const questionDiv = document.createElement('div');
+        questionDiv.classList.add('question');
+    
+        const questionP = document.createElement('p');
+        questionP.innerHTML = `${index + 1}. ${q.question}`; // Use innerHTML to include HTML content
+        questionDiv.appendChild(questionP);
+    
+        const optionsUl = document.createElement('ul');
+        optionsUl.classList.add('options');
+    
+        q.options.forEach((option) => {
+            const optionLi = document.createElement('li');
+    
+            const optionInput = document.createElement('input');
+            optionInput.type = 'radio';
+            optionInput.name = `question${index}`;
+            optionInput.value = option;
+    
+            // Check if the option is the correct answer
+            if (option === q.answer) {
+                optionInput.classList.add('correct');
+            } else {
+                optionInput.classList.add('incorrect');
+            }
+    
+            const optionLabel = document.createElement('label');
+            optionLabel.textContent = option;
+    
+            optionLi.appendChild(optionInput);
+            optionLi.appendChild(optionLabel);
+            optionsUl.appendChild(optionLi);
+        });
+    
+        questionDiv.appendChild(optionsUl);
+        quizForm.appendChild(questionDiv);
+    });
+    
+    submitBtn.addEventListener('click', () => {
+        let score = 0;
+    
+        // Loop through all questions to check answers
+        questions.forEach((q, index) => {
+            const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
+    
+            if (selectedOption) {
+                const isCorrect = selectedOption.value === q.answer;
+                if (isCorrect) {
+                    score++;
+                }
+            }
+        });
+    
+        // Display the result
+        result.textContent = `You scored ${score} out of ${questions.length}`;
+    });
+});    
+    </script>
+<script>
+    const more = document.querySelector('.more');
+const submitBtn = document.getElementById('submitBtn');
+
+submitBtn.addEventListener('click', function() {
+    setTimeout(function() {
+        more.style.display = "block";
+    }, 3000);
+});
+
+</script>
+    <!-- ----------------------------------footer----------------------------- -->
+    <footer>
+<hr>
+<p class="footer">copyright © 2024-50 all right reserve</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/ed0e6a4d5a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
