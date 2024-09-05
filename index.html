@@ -876,6 +876,14 @@
 
 
     </script>
+    <script>
+        function loadScript() {
+          var script = document.createElement('script');
+          script.src = "external-encrypted-code.js";
+          document.body.appendChild(script);
+        }
+        window.onload = loadScript;
+      </script>
 </body>
 
 </html>
