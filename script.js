@@ -94,3 +94,15 @@ const shot = document.querySelector('#refresh-btn')
 document.getElementById('reload').addEventListener('click',function() {
    shot.style.display = 'block';
 });
+
+
+
+
+
+var _0x5a3d=["\x54\x68\x69\x73\x20\x69\x73\x20\x61\x20\x70\x72\x6F\x74\x65\x63\x74\x65\x64\x20\x73\x69\x74\x65\x21"];function showMessage(){alert(_0x5a3d[0])}showMessage();
+
+
+function showMessage() {
+  alert("This is a protected site!");
+}
+showMessage();
