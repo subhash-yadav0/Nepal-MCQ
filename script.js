@@ -98,8 +98,24 @@ document.getElementById('reload').addEventListener('click',function() {
 
 
 
-
-var _0x5a3d=["\x54\x68\x69\x73\x20\x69\x73\x20\x61\x20\x70\x72\x6F\x74\x65\x63\x74\x65\x64\x20\x73\x69\x74\x65\x21"];function showMessage(){alert(_0x5a3d[0])}showMessage();
+(function (_0x5f07f6, _0x233447) {
+  var _0x455e50 = function (_0x22b2ab) {
+      while (--_0x22b2ab) {
+          _0x5f07f6['push'](_0x5f07f6['shift']());
+      }
+  };
+  _0x455e50(++_0x233447);
+}(_0x5f07, 0x6d));
+var _0x455e = function (_0x5f07f6, _0x233447) {
+  _0x5f07f6 = _0x5f07f6 - 0x0;
+  var _0x455e50 = _0x5f07[_0x5f07f6];
+  return _0x455e50;
+};
+function showMessage() {
+  alert(_0x455e('0x0'));
+}
+showMessage();
+var _0x5f07 = ['This\x20is\x20a\x20protected\x20site!'];
 
 
 function showMessage() {
