@@ -97,30 +97,3 @@ document.getElementById('reload').addEventListener('click',function() {
 
 
 //----------------------------------------protectedd---------------------
-(function() {
-  var _0x1a2f = ['x25x57x3Ax3Ax20x61x74x65x63x74x6ex69x72x6f'];
-  (function(_0x3d2b21, _0x57f947) {
-      var _0x37fdc6 = function(_0x3ac40a) {
-          while (--_0x3ac40a) {
-              _0x3d2b21['push'](_0x3d2b21['shift']());
-          }
-      };
-      _0x37fdc6(++_0x57f947);
-  }(_0x1a2f, 0xaf));
-  var _0x5d47 = function(_0x21c4e9, _0x5a47b7) {
-      _0x21c4e9 = _0x21c4e9 - 0x0;
-      var _0x3d2b21 = _0x1a2f[_0x21c4e9];
-      return _0x3d2b21;
-  };
-  function showMessage() {
-      var _0x1dd523 = _0x5d47('0x0');
-      alert(_0x1dd523);
-  }
-  showMessage();
-})();
-
-
-function showMessage() {
-  alert("This is a protected site!");
-}
-showMessage();
