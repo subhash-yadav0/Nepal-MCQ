@@ -86,7 +86,15 @@ button:hover {
 h1 span{
     color: #02bd02;
 }
-
+.fa-house{
+    padding: 25px;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: rgb(38, 146, 16);
+    cursor: pointer;
+    margin: 5px 20px;
+    color: #fff;
+      }
 .more{
     text-decoration: none;
     color: black;

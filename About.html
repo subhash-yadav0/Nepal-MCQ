@@ -8,6 +8,7 @@
     <title>About Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/ed0e6a4d5a.js" crossorigin="anonymous"></script>
     <style>
         body {
             margin: 0;
@@ -62,6 +63,15 @@
             font-weight: bold;
             margin-top: 20px;
         }
+        .fa-house{
+      padding: 25px;
+      font-size: 2rem;
+      border-radius: 50%;
+      background-color: rgb(38, 146, 16);
+      cursor: pointer;
+      margin: 5px 20px;
+      color: #fff;
+        }
     </style>
 </head>
 
@@ -76,7 +86,7 @@
         <a href="#" id="read-more">READ MORE</a>
     </div>
     <div class="big">About</div>
-
+    <a href="index.html"><i class="fa-solid fa-house"></i></a>
     <script>
         document.getElementById("read-more").addEventListener("click", function (event) {
             event.preventDefault();
