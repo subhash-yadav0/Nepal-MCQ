@@ -107,3 +107,8 @@ body {
     -moz-user-select: none; /* For Firefox */
     -ms-user-select: none; /* For IE/Edge */
   }
+  #footer{
+    color: #000;
+    align-items: center;
+    text-align: center;
+  }
